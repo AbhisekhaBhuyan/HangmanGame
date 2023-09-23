@@ -9,15 +9,24 @@ Feel free to replace the simple Hangman ASCII art with something more appealing 
 
 
 import java.util.Scanner;
+
 public class Myfirstgame 
+
 {
    private static final String[] WORDS = {"programming", "java", "hangman", "computer", "algorithm"};
+   
    private static final int MAX_TRIES = 6;
-   public static void main(String[] args) {
+   
+   public static void main(String[] args)
+   {
    Scanner scanner = new Scanner(System.in);
+   
    String wordToGuess = getRandomWord();
+   
    char[] guessedWord = new char[wordToGuess.length()];
+   
    int tries = 0;
+   
    boolean gameOver = false;
    for (int i = 0; i < wordToGuess.length(); i++) {
 	            guessedWord[i] = '_';

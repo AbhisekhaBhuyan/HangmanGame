@@ -4,6 +4,10 @@
  * In this Hangman game, the player needs to guess a word randomly selected from a predefined list. They have a maximum number of tries (in this case, 6), and they guess one letter at a time. If they guess all the letters correctly before running out of tries, they win.
 Feel free to replace the simple Hangman ASCII art with something more appealing if you wish. This is a basic implementation, and you can expand and enhance it as you like.
 
+
+
+
+
 import java.util.Scanner;
 public class Myfirstgame 
 {
@@ -17,7 +21,7 @@ public class Myfirstgame
    boolean gameOver = false;
    for (int i = 0; i < wordToGuess.length(); i++) {
 	            guessedWord[i] = '_';
-	        }
+ }
 
 	        System.out.println("Welcome to Hangman!");
 	        while (!gameOver) {
